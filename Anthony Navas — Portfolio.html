@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anthony Navas — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f4;--surface:#fff;--ink:#14213d;--muted:#55607a;--line:#d9dfd6;--accent:#2a8a55;--tint:#e3efe6;--accent-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1626;--surface:#16213a;--ink:#eef2f7;--muted:#9aa6bf;--line:#2a3856;--accent:#5fd18c;--tint:#1b3042;--accent-ink:#0e1626}}
+:root[data-theme="dark"]{--bg:#0e1626;--surface:#16213a;--ink:#eef2f7;--muted:#9aa6bf;--line:#2a3856;--accent:#5fd18c;--tint:#1b3042;--accent-ink:#0e1626}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+nav .links{display:flex;gap:1.25rem;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem;align-items:center;padding:3rem 0 4rem}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);font-weight:700;letter-spacing:-.03em}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34rem;margin:1.25rem 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.3rem;border-radius:999px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.rate{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem}
+.rate h2{font-size:1.1rem;margin-bottom:.25rem}
+.rate small{color:var(--muted)}
+.row{width:100%;display:block;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:1rem 0;border-top:1px solid var(--line);cursor:pointer;margin-top:.75rem}
+.row:first-of-type{margin-top:1rem}
+.row .top{display:flex;justify-content:space-between;font-weight:500}
+.bar{height:8px;border-radius:99px;background:var(--tint);margin:.6rem 0 .4rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px;width:0;transition:width .6s ease}
+.row .hi{color:var(--muted);font-size:.9rem}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section>.wrap{display:grid;grid-template-columns:200px 1fr;gap:2rem}
+section h2{font-size:1.6rem}
+.prose{max-width:42rem}
+.prose p{margin:0 0 1rem}
+.skills{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.skills li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+.edu{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.25rem;max-width:34rem}
+.edu b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem;font-weight:500}
+.edu span{display:block;color:var(--muted)}
+.contact{background:var(--tint)}
+.contact .big{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:700;text-decoration:none}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:1.5rem}section>.wrap{grid-template-columns:1fr;gap:1rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav aria-label="Main">
+    <strong style="font-family:'Bricolage Grotesque',sans-serif">A. Navas</strong>
+    <div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#languages">Languages</a><a href="#contact">Contact</a></div>
+  </nav>
+  <div class="hero">
+    <div>
+      <h1>Anthony Alexander Navas Ortiz</h1>
+      <p class="lead">Native Spanish speaker living in Brazil for five years. I love technology, digital products and personal finance, and I want to grow in a technology-driven company.</p>
+      <div class="btns">
+        <a class="btn main" href="#contact">Get in touch</a>
+        <a class="btn" href="#about">Read my profile</a>
+      </div>
+    </div>
+    <div class="rate" aria-label="Language levels">
+      <h2>My languages</h2>
+      <small>Tap a language to see a greeting.</small>
+      <button class="row" data-w="100" data-hi="¡Hola! Encantado de conocerte."><span class="top"><span>Spanish</span><span>Native</span></span><span class="bar"><i></i></span><span class="hi">Tap to greet</span></button>
+      <button class="row" data-w="65" data-hi="Olá! Prazer em conhecer você."><span class="top"><span>Portuguese</span><span>Conversational</span></span><span class="bar"><i></i></span><span class="hi">Tap to greet</span></button>
+      <button class="row" data-w="40" data-hi="Hello! Nice to meet you."><span class="top"><span>English</span><span>Reading</span></span><span class="bar"><i></i></span><span class="hi">Tap to greet</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <div class="prose">
+    <p>I am a native Spanish speaker who has lived in Brazil for five years and can communicate in Portuguese. I have a strong personal interest in technology, digital products and personal finance, and I have followed Wise and its app for a long time.</p>
+    <p>I enjoy finding ways to save money and managing expenses carefully. I am comfortable using computers and learning new digital tools. I understand written English when reading; for English writing I use translation or AI tools to help me.</p>
+    <p>Currency exchange has long been a hobby of mine. I like understanding how currencies fluctuate, how exchange rates work, and how money moves between countries. I also follow cryptocurrencies and foreign exchange markets, and I enjoy seeing how technology makes international payments simpler and more accessible.</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills and interests</h2>
+  <ul class="skills">
+    <li>Native Spanish speaker</li>
+    <li>Portuguese: understands spoken and written, conversational</li>
+    <li>English reading comprehension</li>
+    <li>Computer literacy and confidence with digital tools</li>
+    <li>Personal budgeting, saving and expense awareness</li>
+    <li>Adaptability and willingness to learn</li>
+    <li>Fintech, digital banking and international payments</li>
+    <li>Cryptocurrencies and foreign exchange markets</li>
+  </ul>
+</div></section>
+
+<section id="languages"><div class="wrap">
+  <h2>Education</h2>
+  <div class="edu"><b>High School Diploma</b><span>Fray Pedro de Agreda, Caracas, Venezuela</span><span>2018</span></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Career objective</h2>
+  <p class="prose" style="margin:0">To contribute to a technology-driven company where I can apply my language skills, computer knowledge and willingness to learn.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <div>
+    <p style="margin:0 0 .75rem">Call or message me on WhatsApp:</p>
+    <a class="big" href="https://wa.me/5549999781843">+55 49 99978-1843</a>
+  </div>
+</div></section>
+</main>
+<footer class="wrap">© Anthony Alexander Navas Ortiz</footer>
+
+<script>
+document.querySelectorAll('.row').forEach(function(r){
+  var bar=r.querySelector('.bar i'),hi=r.querySelector('.hi');
+  setTimeout(function(){bar.style.width=r.dataset.w+'%'},200);
+  r.addEventListener('click',function(){hi.textContent=r.dataset.hi;hi.style.color='var(--accent)'});
+});
+</script>
+</body>
+</html>
